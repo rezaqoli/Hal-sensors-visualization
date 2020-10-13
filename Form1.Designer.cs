@@ -32,6 +32,9 @@
             this.makeSample = new System.Windows.Forms.Button();
             this.Image = new System.Windows.Forms.Button();
             this.Sample = new System.Windows.Forms.PictureBox();
+            this.mode1 = new System.Windows.Forms.CheckBox();
+            this.Mode2 = new System.Windows.Forms.CheckBox();
+            this.Mode3 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Sample)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,11 +77,47 @@
             this.Sample.TabStop = false;
             this.Sample.Click += new System.EventHandler(this.Sample_Click);
             // 
+            // mode1
+            // 
+            this.mode1.AutoSize = true;
+            this.mode1.Location = new System.Drawing.Point(3, 411);
+            this.mode1.Name = "mode1";
+            this.mode1.Size = new System.Drawing.Size(81, 21);
+            this.mode1.TabIndex = 4;
+            this.mode1.Text = "Mode  1";
+            this.mode1.UseVisualStyleBackColor = true;
+            this.mode1.CheckedChanged += new System.EventHandler(this.mode1_CheckedChanged);
+            // 
+            // Mode2
+            // 
+            this.Mode2.AutoSize = true;
+            this.Mode2.Location = new System.Drawing.Point(106, 411);
+            this.Mode2.Name = "Mode2";
+            this.Mode2.Size = new System.Drawing.Size(73, 21);
+            this.Mode2.TabIndex = 5;
+            this.Mode2.Text = "Mode2";
+            this.Mode2.UseVisualStyleBackColor = true;
+            this.Mode2.CheckedChanged += new System.EventHandler(this.Mode2_CheckedChanged);
+            // 
+            // Mode3
+            // 
+            this.Mode3.AutoSize = true;
+            this.Mode3.Location = new System.Drawing.Point(217, 411);
+            this.Mode3.Name = "Mode3";
+            this.Mode3.Size = new System.Drawing.Size(73, 21);
+            this.Mode3.TabIndex = 6;
+            this.Mode3.Text = "Mode3";
+            this.Mode3.UseVisualStyleBackColor = true;
+            this.Mode3.CheckedChanged += new System.EventHandler(this.Mode3_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1115, 434);
+            this.Controls.Add(this.Mode3);
+            this.Controls.Add(this.Mode2);
+            this.Controls.Add(this.mode1);
             this.Controls.Add(this.Sample);
             this.Controls.Add(this.Image);
             this.Controls.Add(this.makeSample);
@@ -88,6 +127,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Sample)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,6 +137,9 @@
         private System.Windows.Forms.Button makeSample;
         private System.Windows.Forms.Button Image;
         private System.Windows.Forms.PictureBox Sample;
+        private System.Windows.Forms.CheckBox mode1;
+        private System.Windows.Forms.CheckBox Mode2;
+        private System.Windows.Forms.CheckBox Mode3;
     }
 }
 
